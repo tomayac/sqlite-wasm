@@ -15,15 +15,17 @@
   ],
   "main": "index.mjs",
   "type": "module",
-  "files": ["index.mjs", "sqlite-wasm/", "src/"],
+  "files": ["index.d.ts", "index.mjs", "sqlite-wasm/", "src/"],
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./index.mjs",
       "main": "./index.mjs",
       "browser": "./index.mjs"
     },
     "./package.json": "./package.json"
   },
+  "types": "./index.d.ts",
   "bin": {
     "sqlite-wasm": "bin/index.js"
   },
